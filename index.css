@@ -1,0 +1,75 @@
+
+
+
+body {
+    animation-name: skyfade;
+    animation-timing-function: linear;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    margin: 0 0 0 0;
+    background-color: #2c3e50;
+  }
+  
+  .grass {
+    background: green;
+    height: 600px;
+    width: 100%;
+    position: absolute;
+  }
+  
+  .sun {
+    background: #f1c40f;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+   
+    animation-name: sunset;
+    animation-timing-function: linear;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes skyfade {
+    0%{
+        background-color: #2c3e50;
+    }
+    10%{
+        background-color: #f2d2d7;
+    }
+    30%{
+        background-color: #38a5c9;
+    }
+    70%{
+        background-color: 38a5c9;
+    }
+    90%{
+        background-color: #f2d2d7;
+    }
+    100%{
+        background-color: #2c3e50; 
+    }
+}
+
+@keyframes sunset {
+    0%{
+        background: orange;
+        transform: translateY(100%) translateX(-50%);
+    }
+    25%{
+        background: #f1c40f;
+        transform: translateX(150%) translateY(-30%);
+    }
+    50%{
+        background: #f1c40f;
+        transform: translateX(300%) translateY(-50%);
+    }
+    75%{
+        background: #f1c40f;
+        transform: translateX(450%) translateY(-30%);
+    }
+    100%{
+        background: rgb(255, 68, 0);
+        transform: translateX(600%) translateY(100%);
+    }
+
+}
